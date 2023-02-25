@@ -1,6 +1,7 @@
 package ru.job4j.poly;
 
 public class Bus implements Transport {
+
     @Override
     public void drive() {
         System.out.println("Максимально разрешенная скорость 90 км/ч");
