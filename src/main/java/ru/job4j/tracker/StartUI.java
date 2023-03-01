@@ -12,18 +12,6 @@ public class StartUI {
         }
      }
 
-    public static void showItem(Tracker tracker) {
-        System.out.println("=== Show all items ===");
-        Item[] items = tracker.findAll();
-        if (items.length > 0) {
-            for (Item item : items) {
-                System.out.println(item);
-            }
-        } else {
-            System.out.println("Хранилище еще не содержит заявок");
-        }
-    }
-
     private void showMenu(UserAction[] actions) {
         System.out.println("Menu:");
         for (int i = 0; i < actions.length; i++) {
@@ -35,7 +23,14 @@ public class StartUI {
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         UserAction[] actions = {
-                new CreateAction()
+                new CreateAction(),
+                new ShowAllAction(),
+                new EditAction(),
+                new DeleteAction(),
+                new FindByIdAction(),
+                new FindByNameAction(),
+                new Exit()
+
         };
         new StartUI().init(input, tracker, actions);
         }
