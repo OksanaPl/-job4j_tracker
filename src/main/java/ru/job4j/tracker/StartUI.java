@@ -15,7 +15,7 @@ public class StartUI {
             UserAction action = actions[select];
             run = action.execute(input, tracker);
         }
-     }
+    }
 
     private void showMenu(UserAction[] actions) {
         out.println("Menu:");
@@ -39,6 +39,6 @@ public class StartUI {
 
         };
         new StartUI(output).init(input, tracker, actions);
-        }
     }
+}
 
