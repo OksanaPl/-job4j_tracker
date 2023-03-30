@@ -15,9 +15,6 @@ public class UniqueText {
         for (String s : text) {
             checkText.add(s);
         }
-        if (checkOrigin.containsAll(checkText)) {
-            rsl = true;
-        }
-        return rsl;
+        return  checkOrigin.containsAll(checkText);
     }
 }
