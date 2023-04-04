@@ -6,6 +6,7 @@ public class UserMap {
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<>();
         map.put("ok965@yandex.ru", "Plavinskaya");
+        map.put("ok965@yandex.ru", "Zakharova");
         for (String s : map.keySet()) {
             String value = map.get(s);
             System.out.println(s + " - " + value);
