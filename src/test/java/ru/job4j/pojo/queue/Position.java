@@ -1,4 +1,4 @@
-package ru.job4j.queue;
+package ru.job4j.pojo.queue;
 
 public enum Position {
     DIRECTOR,

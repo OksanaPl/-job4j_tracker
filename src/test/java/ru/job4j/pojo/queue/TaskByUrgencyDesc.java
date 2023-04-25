@@ -1,4 +1,4 @@
-package ru.job4j.queue;
+package ru.job4j.pojo.queue;
 
 import java.util.Comparator;
 

@@ -1,6 +1,8 @@
-package ru.job4j.queue;
+package ru.job4j.pojo.queue;
 
 import org.junit.jupiter.api.Test;
+import ru.job4j.queue.AppleStore;
+import ru.job4j.queue.Customer;
 
 import java.util.LinkedList;
 import java.util.Queue;

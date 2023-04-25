@@ -1,5 +1,6 @@
-package ru.job4j.queue;
+package ru.job4j.pojo.queue;
 import org.junit.jupiter.api.Test;
+import ru.job4j.queue.ReconstructPhrase;
 
 import java.util.Arrays;
 import java.util.Deque;
