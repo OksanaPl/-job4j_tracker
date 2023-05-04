@@ -27,5 +27,5 @@ public class AttachmentSort {
         };
         attachments.sort(comparator2);
         System.out.println(attachments);
-        }
+    }
 }
