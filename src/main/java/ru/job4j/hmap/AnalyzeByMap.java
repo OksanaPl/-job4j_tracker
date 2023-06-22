@@ -38,6 +38,9 @@ public class AnalyzeByMap {
                 map.merge(subject.name(), subject.score(), (oldValue, newValue) -> oldValue + subject.score());
             }
         }
+        for (String key : map.keySet()) {
+            averageScoreSubject.add(new Label(key, (map.get(key) / pupils.size())));
+        }
         return averageScoreSubject;
     }
 
@@ -61,7 +64,7 @@ public class AnalyzeByMap {
         LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                map.merge(subject.name(), subject.score(), (oldValue, newValue) -> oldValue + subject.score());
+                map.put(subject.name(), map.getOrDefault(subject.name(), 0) + subject.score());
             }
         }
         for (String key : map.keySet()) {
