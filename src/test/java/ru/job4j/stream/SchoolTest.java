@@ -1,7 +1,6 @@
 package ru.job4j.stream;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -64,4 +63,4 @@ class SchoolTest {
         expected.add(new Student(40, "Surname4"));
         assertThat(result).isEqualTo(expected);
     }
-}
+ }
